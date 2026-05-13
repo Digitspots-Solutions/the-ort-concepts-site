@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ort Concepts - Precision Manufacturing Solutions for Nigeria's Industrial Growth</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Source+Sans+3:wght@300;400;600&display=swap">
+    <style>
+        :root {
+            --color-primary: #0d0b0c;
+            --color-accent: #e05400;
+            --color-bg: #EEEBE5;
+            --color-text: #141414;
+            --color-surface: #2e2a2a;
+            --color-secondary-accent: #819ea4;
+            --font-display: 'Russo One', sans-serif;
+            --font-body: 'Source Sans 3', sans-serif;
+            --border-radius: 2px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(238, 235, 229, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 5%;
+            box-shadow: 4px 4px 0 rgba(13, 11, 12, 0.15);
+        }
+
+        nav .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav .nav-links a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav .nav-links a:hover {
+            color: var(--color-accent);
+        }
+
+        nav .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-accent);
+            transition: width 0.3s ease;
+        }
+
+        nav .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+            z-index: 1001;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--color-text);
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 70px;
+            right: -100%;
+            width: 300px;
+            height: calc(100vh - 70px);
+            background: var(--color-bg);
+            box-shadow: -4px 4px 0 rgba(13, 11, 12, 0.15);
+            transition: right 0.3s ease;
+            z-index: 999;
+            padding: 2rem;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-menu ul a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 0.5rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .mobile-menu ul a:hover {
+            color: var(--color-accent);
+        }
+
+        section {
+            padding: 80px 5%;
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        section:nth-child(1) { animation-delay: 0s; }
+        section:nth-child(2) { animation-delay: 0.1s; }
+        section:nth-child(3) { animation-delay: 0.2s; }
+        section:nth-child(4) { animation-delay: 0.3s; }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-display);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--color-accent);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--color-accent);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 4px 4px 0 var(--color-primary);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 var(--color-primary);
+        }
+
+        #hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.pexels.com/photos/3089681/pexels-photo-3089681.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+        }
+
+        #hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 1;
+        }
+
+        .hero-svg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.08;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            color: #fff;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5%;
+            width: 100%;
+        }
+
+        .hero-content h1 {
+            color: #fff;
+            text-shadow: 4px 4px 0 rgba(13, 11, 12, 0.5);
+        }
+
+        .hero-content .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            color: var(--color-secondary-accent);
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        #about {
+            background: var(--color-surface);
+            color: var(--color-bg);
+        }
+
+        #about h2 {
+            color: var(--color-bg);
+        }
+
+        .about-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            box-shadow: 8px 8px 0 var(--color-accent);
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--color-secondary-accent);
+            z-index: -1;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .texture-overlay {
+            position: relative;
+        }
+
+        .texture-overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(13, 11, 12, 0.02) 10px,
+                rgba(13, 11, 12, 0.02) 20px
+            );
+            pointer-events: none;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: #fff;
+            padding: 2rem;
+            box-shadow: 4px 4px 0 var(--color-primary);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--color-accent);
+        }
+
+        .service-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 var(--color-primary);
+        }
+
+        .service-card h3 {
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+        }
+
+        #contact {
+            background: var(--color-primary);
+            color: var(--color-bg);
+        }
+
+        #contact h2 {
+            color: var(--color-bg);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .contact-details {
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .contact-item strong {
+            color: var(--color-accent);
+            min-width: 100px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-item a {
+            color: var(--color-bg);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--color-accent);
+        }
+
+        .contact-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            box-shadow: 8px 8px 0 var(--color-accent);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 4px 4px 0 rgba(13, 11, 12, 0.3);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 rgba(13, 11, 12, 0.3);
+        }
+
+        .whatsapp-float svg {
+            width: 35px;
+            height: 35px;
+            fill: #fff;
+        }
+
+        footer {
+            background: var(--color-surface);
+            color: var(--color-bg);
+            text-align: center;
+            padding: 2rem 5%;
+        }
+
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .about-split,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            section {
+                padding: 60px 5%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            .hero-content .tagline {
+                font-size: 1.2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 48px 5%;
+            }
+
+            .about-image img,
+            .contact-image img {
+                height: 300px;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .whatsapp-float svg {
+                width: 28px;
+                height: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">The Ort Concepts</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="hero">
+        <svg class="hero-svg-overlay" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <pattern id="blueprint" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                    <line x1="0" y1="0" x2="100" y2="0" stroke="#fff" stroke-width="0.5"/>
+                    <line x1="0" y1="0" x2="0" y2="100" stroke="#fff" stroke-width="0.5"/>
+                    <line x1="50" y1="0" x2="50" y2="100" stroke="#fff" stroke-width="0.3"/>
+                    <line x1="0" y1="50" x2="100" y2="50" stroke="#fff" stroke-width="0.3"/>
+                    <circle cx="50" cy="50" r="3" fill="#fff"/>
+                </pattern>
+            </defs>
+            <rect width="1920" height="1080" fill="url(#blueprint)"/>
+        </svg>
+        <div class="hero-content">
+            <h1>The Ort Concepts</h1>
+            <p class="tagline">Precision Manufacturing Solutions for Nigeria's Industrial Growth</p>
+            <p>Welcome to The Ort Concepts - Your Trusted Manufacturing Partner in Osun State. We deliver precision-engineered manufacturing solutions that power Nigeria's industrial sector. From concept to completion, we transform raw materials into quality products that meet international standards.</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="texture-overlay">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-split">
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/10567360/pexels-photo-10567360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="The Ort Concepts Manufacturing Facility">
+                </div>
+                <div class="about-content">
+                    <p>The Ort Concepts is a leading manufacturing company based in Obaagun, Osun State. We specialize in delivering high-quality manufactured products and industrial solutions to businesses across Nigeria. Our state-of-the-art facility in the Morcas area combines modern manufacturing technology with skilled Nigerian craftsmanship to produce reliable, durable products. We are committed to supporting Nigeria's industrial development through innovation, quality assurance, and customer-focused service delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="texture-overlay">
+        <div class="container">
+            <h2>Our Manufacturing Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Custom Manufacturing Solutions</h3>
+                    <p>We provide bespoke manufacturing services tailored to your specific industrial requirements, from prototyping to full-scale production.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Quality Control & Assurance</h3>
+                    <p>Every product undergoes rigorous testing and quality checks to ensure it meets both local and international manufacturing standards.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Industrial Fabrication</h3>
+                    <p>Expert metal fabrication, welding, and assembly services for industrial components and structures.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Product Development</h3>
+                    <p>From initial concept design to final production, we guide your product through every stage of the manufacturing process.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Supply Chain Management</h3>
+                    <p>Reliable sourcing of raw materials and efficient production scheduling to meet your delivery timelines.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Maintenance & Support</h3>
+                    <p>Ongoing technical support and maintenance services for all manufactured products and equipment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Ready to discuss your manufacturing needs? Contact The Ort Concepts today. Whether you need custom manufacturing solutions, product development, or industrial fabrication services, our team is here to help. Visit us at our facility in Obaagun, Osun State, or reach out via phone or WhatsApp for immediate consultation. We serve clients across Ifelodun and throughout Nigeria.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Phone:</strong>
+                            <a href="tel:+2348028609132">+234 802 860 9132</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <a href="mailto:info@theortconcepts.com">info@theortconcepts.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Address:</strong>
+                            <span>Morcas Area, Obaagun, Ifelodun, Osun State, Nigeria</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>WhatsApp:</strong>
+                            <a href="https://wa.me/2348028609132" target="_blank">Chat with us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-image">
+                    <img src="https://images.pexels.com/photos/30677719/pexels-photo-30677719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Contact The Ort Concepts">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 The Ort Concepts. All Rights Reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/2348028609132" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+    </a>
+
+    <script>
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
