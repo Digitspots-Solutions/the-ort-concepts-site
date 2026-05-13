@@ -1,0 +1,42 @@
+{
+  "businessName": "The Ort Concepts",
+  "industry": "Manufacturing",
+  "tone": "professional and confident",
+  "tagline": "Precision Manufacturing Solutions for Nigeria's Industrial Growth",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Welcome to The Ort Concepts - Your Trusted Manufacturing Partner in Osun State. We deliver precision-engineered manufacturing solutions that power Nigeria's industrial sector. From concept to completion, we transform raw materials into quality products that meet international standards.",
+      "imagePrompt": "Modern Nigerian manufacturing facility exterior with clean industrial architecture, large warehouse with metallic finish, well-maintained compound with workers in safety gear, bright daylight, professional industrial photography, Osun State Nigeria setting, photorealistic, high quality",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "The Ort Concepts is a leading manufacturing company based in Obaagun, Osun State. We specialize in delivering high-quality manufactured products and industrial solutions to businesses across Nigeria. Our state-of-the-art facility in the Morcas area combines modern manufacturing technology with skilled Nigerian craftsmanship to produce reliable, durable products. We are committed to supporting Nigeria's industrial development through innovation, quality assurance, and customer-focused service delivery.",
+      "imagePrompt": "Interior of a clean, organized Nigerian manufacturing workshop, modern machinery and equipment, Nigerian workers in professional safety uniforms collaborating, natural lighting through industrial windows, quality control stations visible, professional industrial environment, photorealistic",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Manufacturing Services",
+      "copy": "Custom Manufacturing Solutions - We provide bespoke manufacturing services tailored to your specific industrial requirements, from prototyping to full-scale production.\n\nQuality Control & Assurance - Every product undergoes rigorous testing and quality checks to ensure it meets both local and international manufacturing standards.\n\nIndustrial Fabrication - Expert metal fabrication, welding, and assembly services for industrial components and structures.\n\nProduct Development - From initial concept design to final production, we guide your product through every stage of the manufacturing process.\n\nSupply Chain Management - Reliable sourcing of raw materials and efficient production scheduling to meet your delivery timelines.\n\nMaintenance & Support - Ongoing technical support and maintenance services for all manufactured products and equipment.",
+      "imagePrompt": "Collage of Nigerian manufacturing processes: metal cutting and welding sparks, precision machinery in operation, quality inspection with measuring tools, workers assembling components, raw materials being processed, modern industrial setting, professional photography, photorealistic",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Get In Touch",
+      "copy": "Ready to discuss your manufacturing needs? Contact The Ort Concepts today. Whether you need custom manufacturing solutions, product development, or industrial fabrication services, our team is here to help. Visit us at our facility in Obaagun, Osun State, or reach out via phone or WhatsApp for immediate consultation. We serve clients across Ifelodun and throughout Nigeria.",
+      "imagePrompt": "Professional Nigerian business contact scene, modern office reception area with manufacturing facility visible through glass windows, friendly Nigerian receptionist, clean corporate environment, Osun State business setting, welcoming atmosphere, photorealistic, high quality",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "+2348028609132",
+    "email": "info@theortconcepts.com",
+    "address": "Morcas Area, Obaagun, Ifelodun, Osun State, Nigeria",
+    "whatsapp": "https://wa.me/2348028609132"
+  }
+}
