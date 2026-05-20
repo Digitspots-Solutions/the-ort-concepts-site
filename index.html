@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ort Concepts - Precision Manufacturing Solutions for Nigeria's Industrial Growth</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Source+Sans+3:wght@300;400;600&display=swap">
+    <title>Winning Woman Pension Administrators - Securing Your Future, Empowering Your Retirement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-primary: #0d0b0c;
-            --color-accent: #e05400;
-            --color-bg: #EEEBE5;
-            --color-text: #141414;
-            --color-surface: #2e2a2a;
-            --color-secondary-accent: #819ea4;
-            --font-display: 'Russo One', sans-serif;
-            --font-body: 'Source Sans 3', sans-serif;
-            --border-radius: 2px;
+            --color-primary: #061c2a;
+            --color-accent: #ad2c2e;
+            --color-bg: #F8F2F0;
+            --color-text: #061628;
+            --color-surface: #0e303d;
+            --color-secondary-accent: #135f59;
+            --font-display: 'Instrument Serif', serif;
+            --font-body: 'Outfit', sans-serif;
+            --border-radius: 8px;
         }
 
         * {
@@ -33,7 +35,11 @@
             color: var(--color-text);
             background-color: var(--color-bg);
             line-height: 1.6;
-            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            line-height: 1.2;
         }
 
         @keyframes fadeUp {
@@ -47,66 +53,48 @@
             }
         }
 
+        /* Navigation */
         nav {
             position: sticky;
             top: 0;
-            background: rgba(238, 235, 229, 0.95);
+            background: rgba(248, 242, 240, 0.95);
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             z-index: 1000;
-            padding: 1rem 5%;
-            box-shadow: 4px 4px 0 rgba(13, 11, 12, 0.15);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        nav .nav-container {
-            max-width: 1400px;
+        .nav-container {
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        nav .logo {
+        .logo {
             font-family: var(--font-display);
-            font-size: 1.5rem;
+            font-size: 1.4rem;
+            font-weight: bold;
             color: var(--color-primary);
-            text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
-        nav .nav-links {
+        .nav-links {
             display: flex;
-            gap: 2rem;
             list-style: none;
+            gap: 2rem;
         }
 
-        nav .nav-links a {
+        .nav-links a {
             text-decoration: none;
             color: var(--color-text);
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
+            font-weight: 500;
             transition: color 0.3s ease;
-            position: relative;
         }
 
-        nav .nav-links a:hover {
+        .nav-links a:hover {
             color: var(--color-accent);
-        }
-
-        nav .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--color-accent);
-            transition: width 0.3s ease;
-        }
-
-        nav .nav-links a:hover::after {
-            width: 100%;
         }
 
         .mobile-menu-btn {
@@ -114,7 +102,6 @@
             flex-direction: column;
             cursor: pointer;
             gap: 4px;
-            z-index: 1001;
         }
 
         .mobile-menu-btn span {
@@ -144,7 +131,7 @@
             width: 300px;
             height: calc(100vh - 70px);
             background: var(--color-bg);
-            box-shadow: -4px 4px 0 rgba(13, 11, 12, 0.15);
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
             transition: right 0.3s ease;
             z-index: 999;
             padding: 2rem;
@@ -166,174 +153,111 @@
             text-decoration: none;
             color: var(--color-text);
             font-size: 1.1rem;
-            font-weight: 600;
+            font-weight: 500;
             transition: color 0.3s ease;
             display: block;
             padding: 0.5rem 0;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         .mobile-menu ul a:hover {
             color: var(--color-accent);
         }
 
-        section {
-            padding: 80px 5%;
+        /* Hero Section */
+        #hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
             animation: fadeUp 0.6s ease forwards;
         }
 
-        section:nth-child(1) { animation-delay: 0s; }
-        section:nth-child(2) { animation-delay: 0.1s; }
-        section:nth-child(3) { animation-delay: 0.2s; }
-        section:nth-child(4) { animation-delay: 0.3s; }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        h1, h2, h3 {
-            font-family: var(--font-display);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            line-height: 1.2;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            color: var(--color-primary);
-            margin-bottom: 1rem;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            color: var(--color-primary);
-            margin-bottom: 2rem;
-            position: relative;
-            display: inline-block;
-        }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: 60px;
-            height: 4px;
-            background: var(--color-accent);
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            color: var(--color-primary);
-            margin-bottom: 1rem;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            background: var(--color-accent);
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            box-shadow: 4px 4px 0 var(--color-primary);
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        .btn:hover {
-            transform: translate(2px, 2px);
-            box-shadow: 2px 2px 0 var(--color-primary);
-        }
-
-        #hero {
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        #hero::before {
-            content: '';
+        .hero-image {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://images.pexels.com/photos/3089681/pexels-photo-3089681.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-            background-size: cover;
-            background-position: center;
-            z-index: 0;
+            object-fit: cover;
+            z-index: 1;
         }
 
-        #hero::after {
-            content: '';
+        .hero-overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.55);
-            z-index: 1;
-        }
-
-        .hero-svg-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.08;
             z-index: 2;
-            pointer-events: none;
         }
 
         .hero-content {
             position: relative;
             z-index: 3;
-            color: #fff;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 5%;
-            width: 100%;
+            max-width: 900px;
+            padding: 2rem;
         }
 
         .hero-content h1 {
-            color: #fff;
-            text-shadow: 4px 4px 0 rgba(13, 11, 12, 0.5);
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
         }
 
         .hero-content .tagline {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             margin-bottom: 1.5rem;
-            font-weight: 300;
-            color: var(--color-secondary-accent);
+            color: #f0f0f0;
         }
 
         .hero-content p {
-            font-size: 1.1rem;
-            max-width: 700px;
+            font-size: 1.2rem;
             margin-bottom: 2rem;
             line-height: 1.8;
         }
 
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--color-accent);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(173, 44, 46, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(173, 44, 46, 0.4);
+        }
+
+        /* Section Base */
+        section {
+            padding: 80px 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--color-primary);
+        }
+
+        /* About Section */
         #about {
-            background: var(--color-surface);
-            color: var(--color-bg);
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.1s;
         }
 
-        #about h2 {
-            color: var(--color-bg);
-        }
-
-        .about-split {
+        .about-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
@@ -341,51 +265,23 @@
         }
 
         .about-image {
-            position: relative;
-        }
-
-        .about-image img {
             width: 100%;
             height: 500px;
             object-fit: cover;
-            box-shadow: 8px 8px 0 var(--color-accent);
-        }
-
-        .about-image::before {
-            content: '';
-            position: absolute;
-            top: -20px;
-            left: -20px;
-            width: 100%;
-            height: 100%;
-            border: 2px solid var(--color-secondary-accent);
-            z-index: -1;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         .about-content p {
-            font-size: 1.1rem;
-            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
         }
 
-        .texture-overlay {
-            position: relative;
-        }
-
-        .texture-overlay::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 10px,
-                rgba(13, 11, 12, 0.02) 10px,
-                rgba(13, 11, 12, 0.02) 20px
-            );
-            pointer-events: none;
+        /* Services Section */
+        #services {
+            background: white;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.2s;
         }
 
         .services-grid {
@@ -396,52 +292,107 @@
         }
 
         .service-card {
-            background: #fff;
+            background: var(--color-bg);
             padding: 2rem;
-            box-shadow: 4px 4px 0 var(--color-primary);
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--color-accent);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .service-card:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0 var(--color-primary);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
         }
 
         .service-card h3 {
-            color: var(--color-accent);
+            color: var(--color-surface);
             margin-bottom: 1rem;
+            font-size: 1.4rem;
         }
 
+        .service-card p {
+            color: var(--color-text);
+            line-height: 1.7;
+        }
+
+        /* Why Choose Us */
+        #why-choose-us {
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.3s;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .why-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--color-secondary-accent);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .why-card h3 {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        /* FAQ Section */
+        #faq {
+            background: white;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.4s;
+        }
+
+        .faq-container {
+            margin-top: 2rem;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--color-bg);
+            border-radius: var(--border-radius);
+        }
+
+        .faq-item h3 {
+            color: var(--color-surface);
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        .faq-item p {
+            color: var(--color-text);
+            line-height: 1.7;
+        }
+
+        /* Contact Section */
         #contact {
-            background: var(--color-primary);
-            color: var(--color-bg);
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.5s;
         }
 
-        #contact h2 {
-            color: var(--color-bg);
-        }
-
-        .contact-content {
+        .contact-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
-            align-items: center;
+            align-items: start;
         }
 
-        .contact-info {
-            font-size: 1.1rem;
-            line-height: 1.8;
+        .contact-info h3 {
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
         }
 
         .contact-details {
@@ -450,36 +401,36 @@
 
         .contact-item {
             margin-bottom: 1.5rem;
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
 
         .contact-item strong {
-            color: var(--color-accent);
-            min-width: 100px;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
+            display: block;
+            color: var(--color-surface);
+            margin-bottom: 0.5rem;
         }
 
         .contact-item a {
-            color: var(--color-bg);
+            color: var(--color-accent);
             text-decoration: none;
-            transition: color 0.3s ease;
         }
 
         .contact-item a:hover {
-            color: var(--color-accent);
+            text-decoration: underline;
         }
 
-        .contact-image img {
+        .contact-image {
             width: 100%;
-            height: 400px;
+            height: 500px;
             object-fit: cover;
-            box-shadow: 8px 8px 0 var(--color-accent);
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
+        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -491,52 +442,32 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 4px 4px 0 rgba(13, 11, 12, 0.3);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
             z-index: 1000;
-            transition: all 0.3s ease;
+            transition: transform 0.3s ease;
             text-decoration: none;
         }
 
         .whatsapp-float:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0 rgba(13, 11, 12, 0.3);
+            transform: scale(1.1);
         }
 
-        .whatsapp-float svg {
-            width: 35px;
-            height: 35px;
-            fill: #fff;
+        .whatsapp-float::before {
+            content: "💬";
+            font-size: 30px;
         }
 
+        /* Footer */
         footer {
-            background: var(--color-surface);
-            color: var(--color-bg);
+            background: var(--color-primary);
+            color: white;
             text-align: center;
-            padding: 2rem 5%;
+            padding: 2rem;
         }
 
-        @media (max-width: 1024px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            h2 {
-                font-size: 2rem;
-            }
-
-            .about-split,
-            .contact-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            section {
-                padding: 60px 5%;
-            }
-        }
-
+        /* Responsive */
         @media (max-width: 768px) {
-            nav .nav-links {
+            .nav-links {
                 display: none;
             }
 
@@ -544,41 +475,62 @@
                 display: flex;
             }
 
-            h1 {
+            .hero-content h1 {
                 font-size: 2rem;
             }
 
-            h2 {
-                font-size: 1.75rem;
-            }
-
             .hero-content .tagline {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
             }
 
-            .services-grid {
-                grid-template-columns: 1fr;
+            .hero-content p {
+                font-size: 1rem;
             }
 
             section {
-                padding: 48px 5%;
+                padding: 48px 1.5rem;
             }
 
-            .about-image img,
-            .contact-image img {
+            section h2 {
+                font-size: 2rem;
+            }
+
+            .about-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-image,
+            .contact-image {
                 height: 300px;
             }
 
-            .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                bottom: 20px;
-                right: 20px;
+            .services-grid,
+            .why-grid {
+                grid-template-columns: 1fr;
             }
 
-            .whatsapp-float svg {
-                width: 28px;
-                height: 28px;
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+            }
+
+            .whatsapp-float::before {
+                font-size: 24px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+
+            .services-grid,
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
@@ -586,11 +538,13 @@
 <body>
     <nav>
         <div class="nav-container">
-            <div class="logo">The Ort Concepts</div>
+            <div class="logo">Winning Woman</div>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn">
@@ -606,120 +560,173 @@
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#why-choose-us">Why Choose Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
     <section id="hero">
-        <svg class="hero-svg-overlay" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
-            <defs>
-                <pattern id="blueprint" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                    <line x1="0" y1="0" x2="100" y2="0" stroke="#fff" stroke-width="0.5"/>
-                    <line x1="0" y1="0" x2="0" y2="100" stroke="#fff" stroke-width="0.5"/>
-                    <line x1="50" y1="0" x2="50" y2="100" stroke="#fff" stroke-width="0.3"/>
-                    <line x1="0" y1="50" x2="100" y2="50" stroke="#fff" stroke-width="0.3"/>
-                    <circle cx="50" cy="50" r="3" fill="#fff"/>
-                </pattern>
-            </defs>
-            <rect width="1920" height="1080" fill="url(#blueprint)"/>
-        </svg>
+        <img src="https://images.pexels.com/photos/34769126/pexels-photo-34769126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Winning Woman Pension Administrators" class="hero-image">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>The Ort Concepts</h1>
-            <p class="tagline">Precision Manufacturing Solutions for Nigeria's Industrial Growth</p>
-            <p>Welcome to The Ort Concepts - Your Trusted Manufacturing Partner in Osun State. We deliver precision-engineered manufacturing solutions that power Nigeria's industrial sector. From concept to completion, we transform raw materials into quality products that meet international standards.</p>
-            <a href="#contact" class="btn">Get In Touch</a>
+            <h1>Welcome to Winning Woman Pension Administrators</h1>
+            <p class="tagline">Securing Your Future, Empowering Your Retirement</p>
+            <p>Winning Woman Retirement Services Limited is a trusted pension administrator dedicated to helping Nigerians build secure and comfortable retirements. With expert asset management and personalized service, we ensure your pension contributions work harder for your future.</p>
+            <a href="#contact" class="cta-button">Get Started Today</a>
         </div>
     </section>
 
-    <section id="about" class="texture-overlay">
-        <div class="container">
-            <h2>About Us</h2>
-            <div class="about-split">
-                <div class="about-image">
-                    <img src="https://images.pexels.com/photos/10567360/pexels-photo-10567360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="The Ort Concepts Manufacturing Facility">
-                </div>
-                <div class="about-content">
-                    <p>The Ort Concepts is a leading manufacturing company based in Obaagun, Osun State. We specialize in delivering high-quality manufactured products and industrial solutions to businesses across Nigeria. Our state-of-the-art facility in the Morcas area combines modern manufacturing technology with skilled Nigerian craftsmanship to produce reliable, durable products. We are committed to supporting Nigeria's industrial development through innovation, quality assurance, and customer-focused service delivery.</p>
-                </div>
+    <section id="about">
+        <div class="about-container">
+            <img src="https://images.pexels.com/photos/17791795/pexels-photo-17791795.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Winning Woman Pension Administrators" class="about-image">
+            <div class="about-content">
+                <h2>About Winning Woman Pension Administrators</h2>
+                <p>Winning Woman Retirement Services Limited operates from Morcas area, Obaagun, Osun State, providing comprehensive pension administration services across Nigeria. Led by experienced asset management professionals, we understand the unique retirement planning needs of Nigerian workers and business owners.</p>
+                <p>Our mission is to ensure every contributor receives maximum value from their pension investments through strategic asset management, transparent operations, and customer-focused service. We combine regulatory compliance with innovative investment strategies to deliver superior returns while maintaining the security of your retirement funds.</p>
+                <p>As a registered Pension Fund Administrator (PFA), we serve both Contributory Pension Scheme members and individuals seeking voluntary pension contributions. Our expertise in the Nigerian financial landscape positions us to navigate market dynamics and optimize your retirement portfolio.</p>
             </div>
         </div>
     </section>
 
-    <section id="services" class="texture-overlay">
-        <div class="container">
-            <h2>Our Manufacturing Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Custom Manufacturing Solutions</h3>
-                    <p>We provide bespoke manufacturing services tailored to your specific industrial requirements, from prototyping to full-scale production.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Quality Control & Assurance</h3>
-                    <p>Every product undergoes rigorous testing and quality checks to ensure it meets both local and international manufacturing standards.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Industrial Fabrication</h3>
-                    <p>Expert metal fabrication, welding, and assembly services for industrial components and structures.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Product Development</h3>
-                    <p>From initial concept design to final production, we guide your product through every stage of the manufacturing process.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Supply Chain Management</h3>
-                    <p>Reliable sourcing of raw materials and efficient production scheduling to meet your delivery timelines.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Maintenance & Support</h3>
-                    <p>Ongoing technical support and maintenance services for all manufactured products and equipment.</p>
-                </div>
+    <section id="services">
+        <h2>Comprehensive Pension Solutions</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Contributory Pension Scheme Administration</h3>
+                <p>We manage Retirement Savings Accounts (RSAs) for employees in both public and private sectors, ensuring seamless contribution management, accurate record-keeping, and timely benefit payments upon retirement.</p>
+            </div>
+            <div class="service-card">
+                <h3>Voluntary Contribution Management</h3>
+                <p>Enhance your retirement income by making additional voluntary contributions. We provide flexible options for self-employed individuals and employees seeking to boost their pension savings beyond mandatory contributions.</p>
+            </div>
+            <div class="service-card">
+                <h3>Asset Management & Investment</h3>
+                <p>Our expert team actively manages pension fund assets across diverse investment portfolios including Federal Government Securities, Corporate Bonds, and other PENCOM-approved instruments to maximize returns while minimizing risk.</p>
+            </div>
+            <div class="service-card">
+                <h3>Retirement Planning Advisory</h3>
+                <p>Receive personalized guidance on retirement planning, benefit projections, and investment strategies tailored to your financial goals and risk profile. We help you understand your pension statements and make informed decisions.</p>
+            </div>
+            <div class="service-card">
+                <h3>Benefit Payment Processing</h3>
+                <p>We facilitate efficient processing of retirement benefits, including programmed withdrawals, annuities, and lump sum payments in compliance with the Pension Reform Act.</p>
+            </div>
+            <div class="service-card">
+                <h3>Pension Transfer Services</h3>
+                <p>Seamlessly transfer your existing RSA from another PFA to Winning Woman with minimal documentation and zero disruption to your retirement savings.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <h2>Why Choose Winning Woman Pension Administrators?</h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <h3>Expert Asset Management Leadership</h3>
+                <p>Our leadership team brings extensive experience in asset management and financial services, ensuring your pension funds are managed with professional expertise and strategic insight.</p>
+            </div>
+            <div class="why-card">
+                <h3>Transparent Operations</h3>
+                <p>We provide clear, detailed statements and regular updates on your pension account performance. No hidden charges, no surprises – just honest, transparent service.</p>
+            </div>
+            <div class="why-card">
+                <h3>Regulatory Compliance</h3>
+                <p>Fully licensed and regulated by the National Pension Commission (PENCOM), we operate within strict regulatory frameworks to protect your retirement savings.</p>
+            </div>
+            <div class="why-card">
+                <h3>Personalized Customer Service</h3>
+                <p>Unlike larger impersonal institutions, we provide individualized attention to each client. Your retirement goals matter to us, and we're accessible when you need guidance.</p>
+            </div>
+            <div class="why-card">
+                <h3>Strong Investment Performance</h3>
+                <p>Our strategic investment approach consistently delivers competitive returns, helping your pension savings grow substantially over time.</p>
+            </div>
+            <div class="why-card">
+                <h3>Local Presence, National Reach</h3>
+                <p>Based in Osun State with nationwide service capability, we understand the Nigerian retirement landscape and serve clients across all regions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>What is a Pension Fund Administrator (PFA)?</h3>
+                <p>A PFA is a licensed entity that manages Retirement Savings Accounts (RSAs) on behalf of pension contributors. Winning Woman Retirement Services Limited is registered with PENCOM to provide these services.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I open an RSA with Winning Woman?</h3>
+                <p>Simply contact us via phone or WhatsApp at +234 802 860 9132. We'll guide you through the simple registration process, which requires basic identification and employment details.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I switch from my current PFA to Winning Woman?</h3>
+                <p>Yes! You can transfer your RSA to Winning Woman at any time. The process is straightforward, and we'll handle all documentation with your current administrator.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How are my pension contributions invested?</h3>
+                <p>Your funds are invested in a diversified portfolio of PENCOM-approved instruments including government securities, corporate bonds, and money market instruments, managed by experienced asset management professionals.</p>
+            </div>
+            <div class="faq-item">
+                <h3>When can I access my pension benefits?</h3>
+                <p>You can access your retirement benefits upon reaching 50 years of age (or the retirement age specified by your employer), upon voluntary retirement, or in cases of temporary or permanent disability.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How often will I receive account statements?</h3>
+                <p>You receive quarterly statements showing your account balance, contributions received, investment returns, and other relevant information.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What happens to my pension if I change jobs?</h3>
+                <p>Your RSA moves with you throughout your career. Simply notify your new employer of your existing RSA details, and they'll continue making contributions to the same account.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are there charges for pension administration?</h3>
+                <p>Yes, administrative and investment management fees are charged as approved by PENCOM. These are clearly disclosed in your account statements and are competitive with industry standards.</p>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p>Ready to discuss your manufacturing needs? Contact The Ort Concepts today. Whether you need custom manufacturing solutions, product development, or industrial fabrication services, our team is here to help. Visit us at our facility in Obaagun, Osun State, or reach out via phone or WhatsApp for immediate consultation. We serve clients across Ifelodun and throughout Nigeria.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <strong>Phone:</strong>
-                            <a href="tel:+2348028609132">+234 802 860 9132</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Email:</strong>
-                            <a href="mailto:info@theortconcepts.com">info@theortconcepts.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Address:</strong>
-                            <span>Morcas Area, Obaagun, Ifelodun, Osun State, Nigeria</span>
-                        </div>
-                        <div class="contact-item">
-                            <strong>WhatsApp:</strong>
-                            <a href="https://wa.me/2348028609132" target="_blank">Chat with us</a>
-                        </div>
+        <h2>Get in Touch with Winning Woman Pension Administrators</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Ready to secure your retirement future? Our team is available to answer your questions, provide personalized advice, and help you get started with your pension planning.</p>
+                <p>Whether you're opening a new RSA, transferring from another PFA, or seeking retirement planning advice, we're here to help you make the most of your pension contributions.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <strong>Office Address:</strong>
+                        Morcas area, Obaagun, Ifelodun<br>
+                        Osun State, Nigeria
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong>
+                        <a href="tel:+2348028609132">+234 802 860 9132</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:info@winningwomanng.com">info@winningwomanng.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Business Hours:</strong>
+                        Monday - Friday: 8:00 AM - 5:00 PM<br>
+                        Saturday: 9:00 AM - 2:00 PM
                     </div>
                 </div>
-                <div class="contact-image">
-                    <img src="https://images.pexels.com/photos/30677719/pexels-photo-30677719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Contact The Ort Concepts">
-                </div>
             </div>
+            <img src="https://images.pexels.com/photos/7413999/pexels-photo-7413999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Contact Winning Woman Pension Administrators" class="contact-image">
         </div>
     </section>
 
+    <a href="https://wa.me/2348028609132" target="_blank" class="whatsapp-float" aria-label="Contact us on WhatsApp"></a>
+
     <footer>
-        <p>&copy; 2025 The Ort Concepts. All Rights Reserved.</p>
+        <p>&copy; 2024 Winning Woman Pension Administrators. All rights reserved.</p>
     </footer>
 
-    <a href="https://wa.me/2348028609132" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-        </svg>
-    </a>
-
     <script>
+        // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -729,6 +736,7 @@
                 mobileMenu.classList.toggle('active');
             });
 
+            // Close mobile menu when clicking a link
             const mobileLinks = mobileMenu.querySelectorAll('a');
             mobileLinks.forEach(link => {
                 link.addEventListener('click', () => {
