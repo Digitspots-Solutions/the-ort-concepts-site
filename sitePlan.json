@@ -1,42 +1,56 @@
 {
-  "businessName": "The Ort Concepts",
-  "industry": "Manufacturing",
-  "tone": "professional and confident",
-  "tagline": "Precision Manufacturing Solutions for Nigeria's Industrial Growth",
+  "businessName": "Winning Woman Pension Administrators",
+  "industry": "Financial Services - Pension Administration",
+  "tone": "formal-authoritative-trustworthy",
+  "tagline": "Securing Your Future, Empowering Your Retirement",
   "sections": [
     {
       "id": "hero",
-      "name": "Hero",
-      "copy": "Welcome to The Ort Concepts - Your Trusted Manufacturing Partner in Osun State. We deliver precision-engineered manufacturing solutions that power Nigeria's industrial sector. From concept to completion, we transform raw materials into quality products that meet international standards.",
-      "imagePrompt": "Modern Nigerian manufacturing facility exterior with clean industrial architecture, large warehouse with metallic finish, well-maintained compound with workers in safety gear, bright daylight, professional industrial photography, Osun State Nigeria setting, photorealistic, high quality",
+      "name": "Hero Section",
+      "copy": "Welcome to Winning Woman Pension Administrators\n\nSecuring Your Future, Empowering Your Retirement\n\nWinning Woman Retirement Services Limited is a trusted pension administrator dedicated to helping Nigerians build secure and comfortable retirements. With expert asset management and personalized service, we ensure your pension contributions work harder for your future.\n\nGet Started Today",
+      "imagePrompt": "Professional Nigerian businesswoman in elegant business attire standing confidently in a modern glass office building, warm natural lighting, Lagos skyline visible through windows, sophisticated corporate environment, photorealistic, inspirational and trustworthy atmosphere",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "The Ort Concepts is a leading manufacturing company based in Obaagun, Osun State. We specialize in delivering high-quality manufactured products and industrial solutions to businesses across Nigeria. Our state-of-the-art facility in the Morcas area combines modern manufacturing technology with skilled Nigerian craftsmanship to produce reliable, durable products. We are committed to supporting Nigeria's industrial development through innovation, quality assurance, and customer-focused service delivery.",
-      "imagePrompt": "Interior of a clean, organized Nigerian manufacturing workshop, modern machinery and equipment, Nigerian workers in professional safety uniforms collaborating, natural lighting through industrial windows, quality control stations visible, professional industrial environment, photorealistic",
+      "copy": "About Winning Woman Pension Administrators\n\nWinning Woman Retirement Services Limited operates from Morcas area, Obaagun, Osun State, providing comprehensive pension administration services across Nigeria. Led by experienced asset management professionals, we understand the unique retirement planning needs of Nigerian workers and business owners.\n\nOur mission is to ensure every contributor receives maximum value from their pension investments through strategic asset management, transparent operations, and customer-focused service. We combine regulatory compliance with innovative investment strategies to deliver superior returns while maintaining the security of your retirement funds.\n\nAs a registered Pension Fund Administrator (PFA), we serve both Contributory Pension Scheme members and individuals seeking voluntary pension contributions. Our expertise in the Nigerian financial landscape positions us to navigate market dynamics and optimize your retirement portfolio.",
+      "imagePrompt": "Modern Nigerian pension office interior with professional staff consulting with middle-aged Nigerian clients, documents and financial charts on desk, warm professional lighting, trust and expertise evident, Osun State local context, photorealistic",
       "layout": "split"
     },
     {
       "id": "services",
-      "name": "Our Manufacturing Services",
-      "copy": "Custom Manufacturing Solutions - We provide bespoke manufacturing services tailored to your specific industrial requirements, from prototyping to full-scale production.\n\nQuality Control & Assurance - Every product undergoes rigorous testing and quality checks to ensure it meets both local and international manufacturing standards.\n\nIndustrial Fabrication - Expert metal fabrication, welding, and assembly services for industrial components and structures.\n\nProduct Development - From initial concept design to final production, we guide your product through every stage of the manufacturing process.\n\nSupply Chain Management - Reliable sourcing of raw materials and efficient production scheduling to meet your delivery timelines.\n\nMaintenance & Support - Ongoing technical support and maintenance services for all manufactured products and equipment.",
-      "imagePrompt": "Collage of Nigerian manufacturing processes: metal cutting and welding sparks, precision machinery in operation, quality inspection with measuring tools, workers assembling components, raw materials being processed, modern industrial setting, professional photography, photorealistic",
+      "name": "Our Services",
+      "copy": "Comprehensive Pension Solutions\n\nContributory Pension Scheme Administration\nWe manage Retirement Savings Accounts (RSAs) for employees in both public and private sectors, ensuring seamless contribution management, accurate record-keeping, and timely benefit payments upon retirement.\n\nVoluntary Contribution Management\nEnhance your retirement income by making additional voluntary contributions. We provide flexible options for self-employed individuals and employees seeking to boost their pension savings beyond mandatory contributions.\n\nAsset Management & Investment\nOur expert team actively manages pension fund assets across diverse investment portfolios including Federal Government Securities, Corporate Bonds, and other PENCOM-approved instruments to maximize returns while minimizing risk.\n\nRetirement Planning Advisory\nReceive personalized guidance on retirement planning, benefit projections, and investment strategies tailored to your financial goals and risk profile. We help you understand your pension statements and make informed decisions.\n\nBenefit Payment Processing\nWe facilitate efficient processing of retirement benefits, including programmed withdrawals, annuities, and lump sum payments in compliance with the Pension Reform Act.\n\nPension Transfer Services\nSeamlessly transfer your existing RSA from another PFA to Winning Woman with minimal documentation and zero disruption to your retirement savings.",
+      "imagePrompt": "Split-screen collage showing diverse Nigerian professionals at different life stages - young employee, mid-career professional, retiree enjoying comfortable life, financial growth charts, Nigerian currency notes, modern banking interface, prosperity and security themes, photorealistic",
       "layout": "grid"
     },
     {
+      "id": "why-choose-us",
+      "name": "Why Choose Us",
+      "copy": "Why Choose Winning Woman Pension Administrators?\n\nExpert Asset Management Leadership\nOur leadership team brings extensive experience in asset management and financial services, ensuring your pension funds are managed with professional expertise and strategic insight.\n\nTransparent Operations\nWe provide clear, detailed statements and regular updates on your pension account performance. No hidden charges, no surprises – just honest, transparent service.\n\nRegulatory Compliance\nFully licensed and regulated by the National Pension Commission (PENCOM), we operate within strict regulatory frameworks to protect your retirement savings.\n\nPersonalized Customer Service\nUnlike larger impersonal institutions, we provide individualized attention to each client. Your retirement goals matter to us, and we're accessible when you need guidance.\n\nStrong Investment Performance\nOur strategic investment approach consistently delivers competitive returns, helping your pension savings grow substantially over time.\n\nLocal Presence, National Reach\nBased in Osun State with nationwide service capability, we understand the Nigerian retirement landscape and serve clients across all regions.",
+      "imagePrompt": "Confident Nigerian female asset manager presenting financial growth charts to attentive clients in professional boardroom, awards and certifications visible on walls, modern corporate setting in Nigeria, trust and competence conveyed, photorealistic",
+      "layout": "cards"
+    },
+    {
+      "id": "faq",
+      "name": "Frequently Asked Questions",
+      "copy": "Frequently Asked Questions\n\nWhat is a Pension Fund Administrator (PFA)?\nA PFA is a licensed entity that manages Retirement Savings Accounts (RSAs) on behalf of pension contributors. Winning Woman Retirement Services Limited is registered with PENCOM to provide these services.\n\nHow do I open an RSA with Winning Woman?\nSimply contact us via phone or WhatsApp at +234 802 860 9132. We'll guide you through the simple registration process, which requires basic identification and employment details.\n\nCan I switch from my current PFA to Winning Woman?\nYes! You can transfer your RSA to Winning Woman at any time. The process is straightforward, and we'll handle all documentation with your current administrator.\n\nHow are my pension contributions invested?\nYour funds are invested in a diversified portfolio of PENCOM-approved instruments including government securities, corporate bonds, and money market instruments, managed by experienced asset management professionals.\n\nWhen can I access my pension benefits?\nYou can access your retirement benefits upon reaching 50 years of age (or the retirement age specified by your employer), upon voluntary retirement, or in cases of temporary or permanent disability.\n\nHow often will I receive account statements?\nYe receive quarterly statements showing your account balance, contributions received, investment returns, and other relevant information.\n\nWhat happens to my pension if I change jobs?\nYour RSA moves with you throughout your career. Simply notify your new employer of your existing RSA details, and they'll continue making contributions to the same account.\n\nAre there charges for pension administration?\nYes, administrative and investment management fees are charged as approved by PENCOM. These are clearly disclosed in your account statements and are competitive with industry standards.",
+      "imagePrompt": "Nigerian professional woman reading pension documents with satisfied expression, modern home office setting, laptop showing clear financial dashboard, warm afternoon lighting, sense of clarity and understanding, photorealistic",
+      "layout": "default"
+    },
+    {
       "id": "contact",
-      "name": "Get In Touch",
-      "copy": "Ready to discuss your manufacturing needs? Contact The Ort Concepts today. Whether you need custom manufacturing solutions, product development, or industrial fabrication services, our team is here to help. Visit us at our facility in Obaagun, Osun State, or reach out via phone or WhatsApp for immediate consultation. We serve clients across Ifelodun and throughout Nigeria.",
-      "imagePrompt": "Professional Nigerian business contact scene, modern office reception area with manufacturing facility visible through glass windows, friendly Nigerian receptionist, clean corporate environment, Osun State business setting, welcoming atmosphere, photorealistic, high quality",
-      "layout": "centered"
+      "name": "Contact Us",
+      "copy": "Get in Touch with Winning Woman Pension Administrators\n\nReady to secure your retirement future? Our team is available to answer your questions, provide personalized advice, and help you get started with your pension planning.\n\nOffice Address:\nMorcas area, Obaagun, Ifelodun\nOsun State, Nigeria\n\nPhone: +234 802 860 9132\n\nBusiness Hours:\nMonday - Friday: 8:00 AM - 5:00 PM\nSaturday: 9:00 AM - 2:00 PM\n\nWhether you're opening a new RSA, transferring from another PFA, or seeking retirement planning advice, we're here to help you make the most of your pension contributions.",
+      "imagePrompt": "Welcoming Nigerian pension office reception area in Osun State, professional receptionist greeting client warmly, comfortable seating area with financial magazines, natural lighting through windows, approachable yet professional atmosphere, photorealistic",
+      "layout": "split"
     }
   ],
   "contact": {
-    "phone": "+2348028609132",
-    "email": "info@theortconcepts.com",
-    "address": "Morcas Area, Obaagun, Ifelodun, Osun State, Nigeria",
+    "phone": "+234 802 860 9132",
+    "email": "info@winningwomanng.com",
+    "address": "Morcas area, Obaagun, Ifelodun, Osun State, Nigeria",
     "whatsapp": "https://wa.me/2348028609132"
   }
 }
